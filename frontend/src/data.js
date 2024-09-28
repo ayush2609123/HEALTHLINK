@@ -2,37 +2,40 @@ export const Menu = [
     {
         id: 1,
         name: "Home",
-        path: '/'
+        path:""
     },
+
+    {
+        id: 7,
+        name: "All Doctors",
+        path:"/all_docs"
+    },
+
+
     {
         id: 2,
-        name: "Explore",
-        path: '/'
+        name: "Price Prediction",
+        path: '/price_prediction'
     },
     {
         id: 3,
-        name: "Contact Us",
-        path: '/'
-    },
-    {
-        id: 4,
-        name: "Price Prediction",
-        path: '/price-prediction'
-    },
-    {
-        id: 5,
         name: "Donate",
         path: '/donate'
     },
     {
-        id: 6,
+        id: 4,
         name: "Gov Schemes",
-        path: '/gov-schemes'
+        path: '/schemes'
     },
     {
-        id: 7,
+        id: 5,
         name: "Info",
-        path: '/info'
+        path: "/info"
+    },
+    {
+        id: 6,
+        name: "About Us",
+        path: '/explore'
     }
 ];
 

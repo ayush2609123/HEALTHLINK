@@ -30,7 +30,7 @@ const RoomPage = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-r from-gray-100 to-blue-200 p-8">
       <h1 className="text-3xl font-bold text-gray-800 mb-6 shadow-sm rounded-md bg-white px-6 py-4 animate-bounce">
-        Welcome to Your Video Consultation Room
+      Connecting to Emergency Doctors 
       </h1>
       <div
         className="w-full max-w-4xl bg-white shadow-lg rounded-lg p-4 border-2 border-gray-200"

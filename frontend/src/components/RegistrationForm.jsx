@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const RegistrationForm = () => {
     const [fullName, setFullName] = useState('');
@@ -19,7 +20,7 @@ const RegistrationForm = () => {
     };
 
     return (
-        <div className="flex items-center justify-center h-[80vh] bg-gradient-to-r from-green-300 to-blue-500">
+        <div className="flex items-center justify-center h-full p-8 bg-gradient-to-r from-green-300 to-blue-500">
             <div className="flex w-full max-w-6xl bg-white rounded shadow-lg overflow-hidden">
                 {/* Left Side: Image */}
                 <div className="flex-1 hidden md:flex items-center justify-center p-5">
@@ -119,7 +120,7 @@ const RegistrationForm = () => {
                             &copy;2024 Healthcare Platform. All rights reserved.
                         </p>
                         <p className="text-center text-gray-600 text-xs mt-4">
-                            Already have an account? <a href="/login" className="text-blue-600 hover:underline">Login here</a>
+                            Already have an account? <NavLink to="/login" className="text-blue-600 hover:underline">Login here</NavLink>
                         </p>
                     </form>
                 </div>

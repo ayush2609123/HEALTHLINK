@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const Section = () => {
   return (
@@ -37,12 +38,15 @@ const Section = () => {
           quidem quam repellat.
         </p>
 
-        <a
-          href="#"
+       <NavLink to='/login'>
+          <button
           className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Login 
-        </a>
+        </button>
+
+        </NavLink>
+
       </div>
     </div>
   </div>

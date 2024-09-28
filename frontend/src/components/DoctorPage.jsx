@@ -8,7 +8,7 @@ import 'flatpickr/dist/themes/material_green.css';
 const DoctorDetailPage = () => {
     const { id } = useParams();
     const { doctors } = useContext(AppContext);
-    const doctor = doctors.find(doc => doc.id === id);
+    const doctor = doctors.find(doc => doc._id === id);
     const [appointmentDate, setAppointmentDate] = useState(new Date());
     const [appointmentTime, setAppointmentTime] = useState('');
 
