@@ -1,21 +1,21 @@
 const express = require('express');
-const user_route = require('./routes/user_routes.js')
-const connectDB = require('./config/connection.js'); 
-
+const cors = require('cors');
 
 const app = express();
-app.use(express.json())
 
+// Enable CORS for requests from your frontend (e.g., http://localhost:5173)
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 
-connectDB();
+// Or if you want to allow all origins (use with caution)
+// app.use(cors());
 
-app.use('/api',user_route)
-
-app.get('/', (req, res) => {
-  res.send('Welcome to the API');
+app.post('/api/valid', (req, res) => {
+  // Your validation logic here...
+  res.json({ valid: true });
 });
 
-
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});

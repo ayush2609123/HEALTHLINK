@@ -4,8 +4,10 @@ import { AppContext } from '../context/AppContext';
 import Flatpickr from 'react-flatpickr';
 import 'flatpickr/dist/flatpickr.css';
 import 'flatpickr/dist/themes/material_green.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const DoctorDetailPage = () => {
+    const navigate=useNavigate();
     const { id } = useParams();
     const { doctors } = useContext(AppContext);
     const doctor = doctors.find(doc => doc._id === id);
@@ -14,7 +16,10 @@ const DoctorDetailPage = () => {
 
     const bookAppointment = () => {
         console.log(`Appointment booked for ${doctor.name} on ${appointmentDate.toLocaleDateString()} at ${appointmentTime}`);
+
+        navigate('/login')
         alert(`Appointment booked for ${doctor.name} on ${appointmentDate.toLocaleDateString()} at ${appointmentTime}`);
+
     };
 
     if (!doctor) return <div>Doctor not found!</div>;

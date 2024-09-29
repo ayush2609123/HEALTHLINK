@@ -1,23 +1,26 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const RegistrationForm = () => {
     const [fullName, setFullName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
-    const [userType, setUserType] = useState('Student'); // Default user type
-    const [showPassword, setShowPassword] = useState(false); // Toggle password visibility
+    const [userType, setUserType] = useState('Student'); 
+    const [showPassword, setShowPassword] = useState(false); 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
+        
         if (password !== confirmPassword) {
             alert("Passwords do not match!");
             return;
         }
         console.log({ fullName, email, password, userType });
     };
+
+    const navigate=useNavigate();
 
     return (
         <div className="flex items-center justify-center h-full p-8 bg-gradient-to-r from-green-300 to-blue-500">
@@ -31,7 +34,7 @@ const RegistrationForm = () => {
                     />
                 </div>
 
-                {/* Right Side: Registration Form */}
+                
                 <div className="flex-1 flex items-center justify-center p-8">
                     <form onSubmit={handleSubmit} className="w-full max-w-md">
                         <h2 className="text-2xl font-bold mb-4 text-center">Register</h2>
@@ -112,6 +115,7 @@ const RegistrationForm = () => {
                             <button
                                 type="submit"
                                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                onClick={()=>navigate('/login')}
                             >
                                 Register
                             </button>

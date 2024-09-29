@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 const CategorySearch = () => {
   const navigate=useNavigate();
   return (
-    <div className='mb-10 flex flex-col items-center gap-4  w-full border-2 border-gray-300 p-4'>
+    <div className='mb-10 flex flex-col items-center gap-4  w-full border-2 '>
       <h2 className='font-bold text-3xl sm:text-4xl tracking-wide'>
         Search <span className='text-sky-300'>Doctors</span>
       </h2>
@@ -36,15 +36,15 @@ const CategorySearch = () => {
         </form>
       </div>
 
-      <div className="flex justify-center mt-11 items-center w-full border-2 p-2 border-blue-500">
-        <div className="flex gap-5 w-[80%] border-yellow-950 border-[3px]  overflow-x-auto">
+      <div className="flex justify-center mt-11 items-center w-full border-2 p-2 ">
+        <div className="flex gap-5 w-[80%] border-yellow-950   overflow-x-auto">
           {specialties.map((data, index) => {
             return (
               <div key={index} onClick={()=>navigate('/emergency')} className="flex cursor-pointer flex-col items-center flex-shrink-0 w-1/5">
                 <img 
                   src={data.image}  
                   alt={data.specialty} 
-                  className="w-24 h-24 rounded-full border-2 border-gray-300 object-cover mb-2" 
+                  className="w-24 h-24 rounded-full border-2  object-cover mb-2" 
                 />
                 <h1 className="text-lg sm:text-xl text-black-800 text-center">{data.specialty}</h1> 
               </div>

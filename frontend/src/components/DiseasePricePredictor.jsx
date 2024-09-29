@@ -41,7 +41,7 @@ const DiseasePricePredictor = () => {
     };
 
     return (
-        <div className="max-w-md mx-auto p-4 mt-32 bg-white shadow-lg rounded-lg">
+        <div className="max-w-md mx-auto mb-72 p-4 mt-32 bg-white shadow-lg rounded-lg">
             {/* Bold heading at the top */}
             <h1 className="text-3xl font-bold mb-4 text-sky-500">
                 Calculate Treatment Price
