@@ -4,41 +4,42 @@
 This project is a comprehensive healthcare website specifically designed to address the healthcare challenges faced by rural communities in India. With a mission to bridge the gap in healthcare accessibility, the platform provides a range of essential medical services, tailored for those with limited access to urban healthcare facilities. 
 
 By leveraging the latest web technologies and a user-friendly interface, the website enhances communication between patients and doctors and simplifies the process of accessing reliable medical services. It addresses common rural health concerns and aims to make healthcare more inclusive and efficient in underserved areas.
-
+![WhatsApp Image 2024-10-05 at 00 01 26](https://github.com/user-attachments/assets/59923c13-25aa-46de-9988-31272fda3208)
 ### **Features**
 
 1. **Video Consultations**  
    The platform integrates the **Zego API** to enable seamless video consultations between patients and doctors. This feature allows individuals in rural areas to access expert medical advice without needing to travel to distant healthcare facilities, making healthcare accessible remotely.
 
-2. **Appointment Scheduling**  
+3. **Appointment Scheduling**  
    Patients can easily book appointments with doctors via the platform. The system is designed to work even in areas with inconsistent internet connectivity, ensuring appointments are logged and confirmed efficiently. Notifications are sent to patients confirming their scheduled consultations.
 
-3. **Disease Risk Prediction Calculator**  
+4. **Disease Risk Prediction Calculator**  
    The website includes a disease risk prediction tool, powered by machine learning algorithms. Users can input symptoms and receive insights on potential health risks, helping to identify possible conditions early. This tool also suggests when to seek further medical advice based on the risk level.
 
-4. **Donation Section**  
+5. **Donation Section**  
    To support individuals in urgent need of medical treatment, the platform features a donation section. This section allows users to contribute directly to patients requiring financial assistance, with transparent tracking of donations. Each case provides details about the patient's condition, the amount needed, and the progress toward funding their treatment.
 
-5. **Healthcare Myths and Facts**  
+6. **Healthcare Myths and Facts**  
    In rural areas, misinformation can spread quickly, leading to dangerous healthcare practices. The website includes a section that dispels common myths about healthcare, offering verified facts to raise awareness and promote healthy practices. Topics cover common misconceptions around vaccinations, maternal care, nutrition, and more.
 
-6. **Image Management**  
+7. **Image Management**  
    The platform uses **Cloudinary** for efficient image storage and management. Doctors and patients can upload and view medical images (such as X-rays or reports) securely. Cloudinary ensures that images are optimized and delivered quickly, even over slow networks.
 
-7. **Data Storage**  
+8. **Data Storage**  
    All user data, including medical histories and consultation records, are securely stored using **MongoDB Atlas**, a cloud-based NoSQL database. Data security is a top priority, and the platform ensures that sensitive information is encrypted and only accessible to authorized users.
 
-8. **Responsive and Scalable Design**  
+9. **Responsive and Scalable Design**  
    The website is designed using **React**, ensuring a fast, responsive user interface. Whether accessed via smartphones, tablets, or desktops, the website adjusts seamlessly to different screen sizes and device capabilities, making it accessible for users with various types of hardware.
 
-9. **Search and Filter Functionality**  
+10. **Search and Filter Functionality**  
    Patients can search for doctors by name, specialization, or location using a robust search bar. The search function also supports searching by unique doctor numbers or phone numbers, providing multiple ways to connect with healthcare providers.
 
-10. **Price Prediction for Surgeries**  
+11. **Price Prediction for Surgeries**  
     The platform includes a price prediction tool that estimates the cost of surgeries or treatments at different hospitals. By providing this information, users can make informed decisions about where to seek medical help based on their financial capacity.
 
-11. **Emergency Services**  
+12. **Emergency Services**  
     For users with limited access to urgent medical care, the platform offers an emergency video call service, particularly for those enrolled in partner health insurance programs. This ensures that critical care can be delivered in a timely manner.
+    ![WhatsApp Image 2024-10-05 at 00 02 07](https://github.com/user-attachments/assets/ad470ca6-7dcc-41bf-9cbf-cdb7ffe7ac25)
 
 ### **Technology Stack**
 
